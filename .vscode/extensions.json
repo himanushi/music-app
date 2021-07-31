@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    // Dart
+    "dart-code.dart-code",
+    // Flutter
+    "dart-code.flutter",
+    // Run on Save
+    "emeraldwalk.runonsave"
+  ]
+}
