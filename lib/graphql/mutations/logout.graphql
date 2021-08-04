@@ -1,3 +1,5 @@
+# import '../fragments/current-user-fields.graphql'
+
 mutation Logout($input: LogoutInput!) {
   logout(input: $input) {
     currentUser {

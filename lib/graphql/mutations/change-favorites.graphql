@@ -1,3 +1,5 @@
+# import '../fragments/current-user-fields.graphql'
+
 mutation ChangeFavorites($input: ChangeFavoritesInput!) {
   changeFavorites(input: $input) {
     currentUser {
