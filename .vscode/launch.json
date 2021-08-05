@@ -1,0 +1,21 @@
+{
+  // IntelliSense を使用して利用可能な属性を学べます。
+  // 既存の属性の説明をホバーして表示します。
+  // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "music_app",
+      "request": "launch",
+      "type": "dart",
+      "args": ["--web-port", "50000"]
+    },
+    {
+      "name": "music_app (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "args": ["--web-port", "50000"]
+    }
+  ]
+}
