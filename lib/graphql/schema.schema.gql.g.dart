@@ -1178,8 +1178,7 @@ class _$GCursorInputObjectSerializer
     if (value != null) {
       result
         ..add('limit')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -1201,9 +1200,8 @@ class _$GCursorInputObjectSerializer
               specifiedType: const FullType(int)) as int?;
           break;
         case 'limit':
-          result.limit.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GPositiveNumber))!
-              as GPositiveNumber);
+          result.limit = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -4365,7 +4363,7 @@ class _$GCursorInputObject extends GCursorInputObject {
   @override
   final int? offset;
   @override
-  final GPositiveNumber? limit;
+  final int? limit;
 
   factory _$GCursorInputObject(
           [void Function(GCursorInputObjectBuilder)? updates]) =>
@@ -4412,10 +4410,9 @@ class GCursorInputObjectBuilder
   int? get offset => _$this._offset;
   set offset(int? offset) => _$this._offset = offset;
 
-  GPositiveNumberBuilder? _limit;
-  GPositiveNumberBuilder get limit =>
-      _$this._limit ??= new GPositiveNumberBuilder();
-  set limit(GPositiveNumberBuilder? limit) => _$this._limit = limit;
+  int? _limit;
+  int? get limit => _$this._limit;
+  set limit(int? limit) => _$this._limit = limit;
 
   GCursorInputObjectBuilder();
 
@@ -4423,7 +4420,7 @@ class GCursorInputObjectBuilder
     final $v = _$v;
     if ($v != null) {
       _offset = $v.offset;
-      _limit = $v.limit?.toBuilder();
+      _limit = $v.limit;
       _$v = null;
     }
     return this;
@@ -4442,21 +4439,8 @@ class GCursorInputObjectBuilder
 
   @override
   _$GCursorInputObject build() {
-    _$GCursorInputObject _$result;
-    try {
-      _$result = _$v ??
-          new _$GCursorInputObject._(offset: offset, limit: _limit?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'limit';
-        _limit?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GCursorInputObject', _$failedField, e.toString());
-      }
-      rethrow;
-    }
+    final _$result =
+        _$v ?? new _$GCursorInputObject._(offset: offset, limit: limit);
     replace(_$result);
     return _$result;
   }
@@ -5807,84 +5791,6 @@ class GPlaylistsSortInputObjectBuilder
   _$GPlaylistsSortInputObject build() {
     final _$result =
         _$v ?? new _$GPlaylistsSortInputObject._(order: order, type: type);
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$GPositiveNumber extends GPositiveNumber {
-  @override
-  final String value;
-
-  factory _$GPositiveNumber([void Function(GPositiveNumberBuilder)? updates]) =>
-      (new GPositiveNumberBuilder()..update(updates)).build();
-
-  _$GPositiveNumber._({required this.value}) : super._() {
-    BuiltValueNullFieldError.checkNotNull(value, 'GPositiveNumber', 'value');
-  }
-
-  @override
-  GPositiveNumber rebuild(void Function(GPositiveNumberBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
-
-  @override
-  GPositiveNumberBuilder toBuilder() =>
-      new GPositiveNumberBuilder()..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is GPositiveNumber && value == other.value;
-  }
-
-  @override
-  int get hashCode {
-    return $jf($jc(0, value.hashCode));
-  }
-
-  @override
-  String toString() {
-    return (newBuiltValueToStringHelper('GPositiveNumber')..add('value', value))
-        .toString();
-  }
-}
-
-class GPositiveNumberBuilder
-    implements Builder<GPositiveNumber, GPositiveNumberBuilder> {
-  _$GPositiveNumber? _$v;
-
-  String? _value;
-  String? get value => _$this._value;
-  set value(String? value) => _$this._value = value;
-
-  GPositiveNumberBuilder();
-
-  GPositiveNumberBuilder get _$this {
-    final $v = _$v;
-    if ($v != null) {
-      _value = $v.value;
-      _$v = null;
-    }
-    return this;
-  }
-
-  @override
-  void replace(GPositiveNumber other) {
-    ArgumentError.checkNotNull(other, 'other');
-    _$v = other as _$GPositiveNumber;
-  }
-
-  @override
-  void update(void Function(GPositiveNumberBuilder)? updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  _$GPositiveNumber build() {
-    final _$result = _$v ??
-        new _$GPositiveNumber._(
-            value: BuiltValueNullFieldError.checkNotNull(
-                value, 'GPositiveNumber', 'value'));
     replace(_$result);
     return _$result;
   }

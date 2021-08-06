@@ -39,7 +39,7 @@ abstract class GAlbumData_album
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   _i2.GTTID get id;
-  _i2.GPositiveNumber get totalTracks;
+  int get totalTracks;
   String get name;
   _i2.GStatusEnum get status;
   _i2.GISO8601DateTime get releaseDate;
@@ -73,8 +73,8 @@ abstract class GAlbumData_album_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i2.GPositiveNumber? get width;
-  _i2.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GAlbumData_album_artworkL> get serializer =>
       _$gAlbumDataAlbumArtworkLSerializer;
   Map<String, dynamic> toJson() =>
@@ -99,8 +99,8 @@ abstract class GAlbumData_album_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i2.GPositiveNumber? get width;
-  _i2.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GAlbumData_album_artworkM> get serializer =>
       _$gAlbumDataAlbumArtworkMSerializer;
   Map<String, dynamic> toJson() =>
@@ -180,9 +180,9 @@ abstract class GAlbumData_album_tracks
   _i2.GTTID get id;
   String get isrc;
   String get name;
-  _i2.GPositiveNumber get discNumber;
-  _i2.GPositiveNumber get trackNumber;
-  _i2.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GAlbumData_album_tracks_artworkL get artworkL;
@@ -214,8 +214,8 @@ abstract class GAlbumData_album_tracks_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i2.GPositiveNumber? get width;
-  _i2.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GAlbumData_album_tracks_artworkL> get serializer =>
       _$gAlbumDataAlbumTracksArtworkLSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers
@@ -243,8 +243,8 @@ abstract class GAlbumData_album_tracks_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i2.GPositiveNumber? get width;
-  _i2.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GAlbumData_album_tracks_artworkM> get serializer =>
       _$gAlbumDataAlbumTracksArtworkMSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers

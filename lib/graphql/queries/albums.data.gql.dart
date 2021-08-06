@@ -66,8 +66,8 @@ abstract class GAlbumsData_items_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i2.GPositiveNumber? get width;
-  _i2.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GAlbumsData_items_artworkM> get serializer =>
       _$gAlbumsDataItemsArtworkMSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(

@@ -262,13 +262,13 @@ class _$GPlaylistData_playlist_trackSerializer
       serializers.serialize(object.name, specifiedType: const FullType(String)),
       'discNumber',
       serializers.serialize(object.discNumber,
-          specifiedType: const FullType(_i3.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'trackNumber',
       serializers.serialize(object.trackNumber,
-          specifiedType: const FullType(_i3.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'durationMs',
       serializers.serialize(object.durationMs,
-          specifiedType: const FullType(_i3.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'popularity',
       serializers.serialize(object.popularity,
           specifiedType: const FullType(int)),
@@ -337,19 +337,16 @@ class _$GPlaylistData_playlist_trackSerializer
               specifiedType: const FullType(String)) as String;
           break;
         case 'discNumber':
-          result.discNumber.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.discNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'trackNumber':
-          result.trackNumber.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.trackNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'durationMs':
-          result.durationMs.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.durationMs = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'previewUrl':
           result.previewUrl = serializers.deserialize(value,
@@ -421,15 +418,13 @@ class _$GPlaylistData_playlist_track_artworkLSerializer
     if (value != null) {
       result
         ..add('width')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i3.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.height;
     if (value != null) {
       result
         ..add('height')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i3.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -455,14 +450,12 @@ class _$GPlaylistData_playlist_track_artworkLSerializer
               specifiedType: const FullType(String)) as String?;
           break;
         case 'width':
-          result.width.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.width = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'height':
-          result.height.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.height = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -502,15 +495,13 @@ class _$GPlaylistData_playlist_track_artworkMSerializer
     if (value != null) {
       result
         ..add('width')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i3.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.height;
     if (value != null) {
       result
         ..add('height')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i3.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -536,14 +527,12 @@ class _$GPlaylistData_playlist_track_artworkMSerializer
               specifiedType: const FullType(String)) as String?;
           break;
         case 'width':
-          result.width.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.width = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'height':
-          result.height.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.height = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -840,13 +829,13 @@ class _$GPlaylistData_playlist_items_trackSerializer
       serializers.serialize(object.name, specifiedType: const FullType(String)),
       'discNumber',
       serializers.serialize(object.discNumber,
-          specifiedType: const FullType(_i3.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'trackNumber',
       serializers.serialize(object.trackNumber,
-          specifiedType: const FullType(_i3.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'durationMs',
       serializers.serialize(object.durationMs,
-          specifiedType: const FullType(_i3.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'popularity',
       serializers.serialize(object.popularity,
           specifiedType: const FullType(int)),
@@ -918,19 +907,16 @@ class _$GPlaylistData_playlist_items_trackSerializer
               specifiedType: const FullType(String)) as String;
           break;
         case 'discNumber':
-          result.discNumber.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.discNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'trackNumber':
-          result.trackNumber.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.trackNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'durationMs':
-          result.durationMs.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.durationMs = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'previewUrl':
           result.previewUrl = serializers.deserialize(value,
@@ -1004,15 +990,13 @@ class _$GPlaylistData_playlist_items_track_artworkLSerializer
     if (value != null) {
       result
         ..add('width')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i3.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.height;
     if (value != null) {
       result
         ..add('height')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i3.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -1038,14 +1022,12 @@ class _$GPlaylistData_playlist_items_track_artworkLSerializer
               specifiedType: const FullType(String)) as String?;
           break;
         case 'width':
-          result.width.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.width = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'height':
-          result.height.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.height = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -1086,15 +1068,13 @@ class _$GPlaylistData_playlist_items_track_artworkMSerializer
     if (value != null) {
       result
         ..add('width')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i3.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.height;
     if (value != null) {
       result
         ..add('height')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i3.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -1120,14 +1100,12 @@ class _$GPlaylistData_playlist_items_track_artworkMSerializer
               specifiedType: const FullType(String)) as String?;
           break;
         case 'width':
-          result.width.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.width = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'height':
-          result.height.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPositiveNumber))!
-              as _i3.GPositiveNumber);
+          result.height = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -1656,11 +1634,11 @@ class _$GPlaylistData_playlist_track extends GPlaylistData_playlist_track {
   @override
   final String name;
   @override
-  final _i3.GPositiveNumber discNumber;
+  final int discNumber;
   @override
-  final _i3.GPositiveNumber trackNumber;
+  final int trackNumber;
   @override
-  final _i3.GPositiveNumber durationMs;
+  final int durationMs;
   @override
   final String? previewUrl;
   @override
@@ -1816,23 +1794,17 @@ class GPlaylistData_playlist_trackBuilder
   String? get name => _$this._name;
   set name(String? name) => _$this._name = name;
 
-  _i3.GPositiveNumberBuilder? _discNumber;
-  _i3.GPositiveNumberBuilder get discNumber =>
-      _$this._discNumber ??= new _i3.GPositiveNumberBuilder();
-  set discNumber(_i3.GPositiveNumberBuilder? discNumber) =>
-      _$this._discNumber = discNumber;
+  int? _discNumber;
+  int? get discNumber => _$this._discNumber;
+  set discNumber(int? discNumber) => _$this._discNumber = discNumber;
 
-  _i3.GPositiveNumberBuilder? _trackNumber;
-  _i3.GPositiveNumberBuilder get trackNumber =>
-      _$this._trackNumber ??= new _i3.GPositiveNumberBuilder();
-  set trackNumber(_i3.GPositiveNumberBuilder? trackNumber) =>
-      _$this._trackNumber = trackNumber;
+  int? _trackNumber;
+  int? get trackNumber => _$this._trackNumber;
+  set trackNumber(int? trackNumber) => _$this._trackNumber = trackNumber;
 
-  _i3.GPositiveNumberBuilder? _durationMs;
-  _i3.GPositiveNumberBuilder get durationMs =>
-      _$this._durationMs ??= new _i3.GPositiveNumberBuilder();
-  set durationMs(_i3.GPositiveNumberBuilder? durationMs) =>
-      _$this._durationMs = durationMs;
+  int? _durationMs;
+  int? get durationMs => _$this._durationMs;
+  set durationMs(int? durationMs) => _$this._durationMs = durationMs;
 
   String? _previewUrl;
   String? get previewUrl => _$this._previewUrl;
@@ -1883,9 +1855,9 @@ class GPlaylistData_playlist_trackBuilder
       _id = $v.id.toBuilder();
       _isrc = $v.isrc;
       _name = $v.name;
-      _discNumber = $v.discNumber.toBuilder();
-      _trackNumber = $v.trackNumber.toBuilder();
-      _durationMs = $v.durationMs.toBuilder();
+      _discNumber = $v.discNumber;
+      _trackNumber = $v.trackNumber;
+      _durationMs = $v.durationMs;
       _previewUrl = $v.previewUrl;
       _popularity = $v.popularity;
       _artworkL = $v.artworkL.toBuilder();
@@ -1921,9 +1893,12 @@ class GPlaylistData_playlist_trackBuilder
                   isrc, 'GPlaylistData_playlist_track', 'isrc'),
               name: BuiltValueNullFieldError.checkNotNull(
                   name, 'GPlaylistData_playlist_track', 'name'),
-              discNumber: discNumber.build(),
-              trackNumber: trackNumber.build(),
-              durationMs: durationMs.build(),
+              discNumber: BuiltValueNullFieldError.checkNotNull(
+                  discNumber, 'GPlaylistData_playlist_track', 'discNumber'),
+              trackNumber: BuiltValueNullFieldError.checkNotNull(
+                  trackNumber, 'GPlaylistData_playlist_track', 'trackNumber'),
+              durationMs: BuiltValueNullFieldError.checkNotNull(
+                  durationMs, 'GPlaylistData_playlist_track', 'durationMs'),
               previewUrl: previewUrl,
               popularity: BuiltValueNullFieldError.checkNotNull(
                   popularity, 'GPlaylistData_playlist_track', 'popularity'),
@@ -1936,13 +1911,6 @@ class GPlaylistData_playlist_trackBuilder
       try {
         _$failedField = 'id';
         id.build();
-
-        _$failedField = 'discNumber';
-        discNumber.build();
-        _$failedField = 'trackNumber';
-        trackNumber.build();
-        _$failedField = 'durationMs';
-        durationMs.build();
 
         _$failedField = 'artworkL';
         artworkL.build();
@@ -1970,9 +1938,9 @@ class _$GPlaylistData_playlist_track_artworkL
   @override
   final String? url;
   @override
-  final _i3.GPositiveNumber? width;
+  final int? width;
   @override
-  final _i3.GPositiveNumber? height;
+  final int? height;
 
   factory _$GPlaylistData_playlist_track_artworkL(
           [void Function(GPlaylistData_playlist_track_artworkLBuilder)?
@@ -2039,15 +2007,13 @@ class GPlaylistData_playlist_track_artworkLBuilder
   String? get url => _$this._url;
   set url(String? url) => _$this._url = url;
 
-  _i3.GPositiveNumberBuilder? _width;
-  _i3.GPositiveNumberBuilder get width =>
-      _$this._width ??= new _i3.GPositiveNumberBuilder();
-  set width(_i3.GPositiveNumberBuilder? width) => _$this._width = width;
+  int? _width;
+  int? get width => _$this._width;
+  set width(int? width) => _$this._width = width;
 
-  _i3.GPositiveNumberBuilder? _height;
-  _i3.GPositiveNumberBuilder get height =>
-      _$this._height ??= new _i3.GPositiveNumberBuilder();
-  set height(_i3.GPositiveNumberBuilder? height) => _$this._height = height;
+  int? _height;
+  int? get height => _$this._height;
+  set height(int? height) => _$this._height = height;
 
   GPlaylistData_playlist_track_artworkLBuilder() {
     GPlaylistData_playlist_track_artworkL._initializeBuilder(this);
@@ -2058,8 +2024,8 @@ class GPlaylistData_playlist_track_artworkLBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _url = $v.url;
-      _width = $v.width?.toBuilder();
-      _height = $v.height?.toBuilder();
+      _width = $v.width;
+      _height = $v.height;
       _$v = null;
     }
     return this;
@@ -2079,30 +2045,13 @@ class GPlaylistData_playlist_track_artworkLBuilder
 
   @override
   _$GPlaylistData_playlist_track_artworkL build() {
-    _$GPlaylistData_playlist_track_artworkL _$result;
-    try {
-      _$result = _$v ??
-          new _$GPlaylistData_playlist_track_artworkL._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  'GPlaylistData_playlist_track_artworkL', 'G__typename'),
-              url: url,
-              width: _width?.build(),
-              height: _height?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'width';
-        _width?.build();
-        _$failedField = 'height';
-        _height?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GPlaylistData_playlist_track_artworkL',
-            _$failedField,
-            e.toString());
-      }
-      rethrow;
-    }
+    final _$result = _$v ??
+        new _$GPlaylistData_playlist_track_artworkL._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                'GPlaylistData_playlist_track_artworkL', 'G__typename'),
+            url: url,
+            width: width,
+            height: height);
     replace(_$result);
     return _$result;
   }
@@ -2115,9 +2064,9 @@ class _$GPlaylistData_playlist_track_artworkM
   @override
   final String? url;
   @override
-  final _i3.GPositiveNumber? width;
+  final int? width;
   @override
-  final _i3.GPositiveNumber? height;
+  final int? height;
 
   factory _$GPlaylistData_playlist_track_artworkM(
           [void Function(GPlaylistData_playlist_track_artworkMBuilder)?
@@ -2184,15 +2133,13 @@ class GPlaylistData_playlist_track_artworkMBuilder
   String? get url => _$this._url;
   set url(String? url) => _$this._url = url;
 
-  _i3.GPositiveNumberBuilder? _width;
-  _i3.GPositiveNumberBuilder get width =>
-      _$this._width ??= new _i3.GPositiveNumberBuilder();
-  set width(_i3.GPositiveNumberBuilder? width) => _$this._width = width;
+  int? _width;
+  int? get width => _$this._width;
+  set width(int? width) => _$this._width = width;
 
-  _i3.GPositiveNumberBuilder? _height;
-  _i3.GPositiveNumberBuilder get height =>
-      _$this._height ??= new _i3.GPositiveNumberBuilder();
-  set height(_i3.GPositiveNumberBuilder? height) => _$this._height = height;
+  int? _height;
+  int? get height => _$this._height;
+  set height(int? height) => _$this._height = height;
 
   GPlaylistData_playlist_track_artworkMBuilder() {
     GPlaylistData_playlist_track_artworkM._initializeBuilder(this);
@@ -2203,8 +2150,8 @@ class GPlaylistData_playlist_track_artworkMBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _url = $v.url;
-      _width = $v.width?.toBuilder();
-      _height = $v.height?.toBuilder();
+      _width = $v.width;
+      _height = $v.height;
       _$v = null;
     }
     return this;
@@ -2224,30 +2171,13 @@ class GPlaylistData_playlist_track_artworkMBuilder
 
   @override
   _$GPlaylistData_playlist_track_artworkM build() {
-    _$GPlaylistData_playlist_track_artworkM _$result;
-    try {
-      _$result = _$v ??
-          new _$GPlaylistData_playlist_track_artworkM._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  'GPlaylistData_playlist_track_artworkM', 'G__typename'),
-              url: url,
-              width: _width?.build(),
-              height: _height?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'width';
-        _width?.build();
-        _$failedField = 'height';
-        _height?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GPlaylistData_playlist_track_artworkM',
-            _$failedField,
-            e.toString());
-      }
-      rethrow;
-    }
+    final _$result = _$v ??
+        new _$GPlaylistData_playlist_track_artworkM._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                'GPlaylistData_playlist_track_artworkM', 'G__typename'),
+            url: url,
+            width: width,
+            height: height);
     replace(_$result);
     return _$result;
   }
@@ -2854,11 +2784,11 @@ class _$GPlaylistData_playlist_items_track
   @override
   final String name;
   @override
-  final _i3.GPositiveNumber discNumber;
+  final int discNumber;
   @override
-  final _i3.GPositiveNumber trackNumber;
+  final int trackNumber;
   @override
-  final _i3.GPositiveNumber durationMs;
+  final int durationMs;
   @override
   final String? previewUrl;
   @override
@@ -3017,23 +2947,17 @@ class GPlaylistData_playlist_items_trackBuilder
   String? get name => _$this._name;
   set name(String? name) => _$this._name = name;
 
-  _i3.GPositiveNumberBuilder? _discNumber;
-  _i3.GPositiveNumberBuilder get discNumber =>
-      _$this._discNumber ??= new _i3.GPositiveNumberBuilder();
-  set discNumber(_i3.GPositiveNumberBuilder? discNumber) =>
-      _$this._discNumber = discNumber;
+  int? _discNumber;
+  int? get discNumber => _$this._discNumber;
+  set discNumber(int? discNumber) => _$this._discNumber = discNumber;
 
-  _i3.GPositiveNumberBuilder? _trackNumber;
-  _i3.GPositiveNumberBuilder get trackNumber =>
-      _$this._trackNumber ??= new _i3.GPositiveNumberBuilder();
-  set trackNumber(_i3.GPositiveNumberBuilder? trackNumber) =>
-      _$this._trackNumber = trackNumber;
+  int? _trackNumber;
+  int? get trackNumber => _$this._trackNumber;
+  set trackNumber(int? trackNumber) => _$this._trackNumber = trackNumber;
 
-  _i3.GPositiveNumberBuilder? _durationMs;
-  _i3.GPositiveNumberBuilder get durationMs =>
-      _$this._durationMs ??= new _i3.GPositiveNumberBuilder();
-  set durationMs(_i3.GPositiveNumberBuilder? durationMs) =>
-      _$this._durationMs = durationMs;
+  int? _durationMs;
+  int? get durationMs => _$this._durationMs;
+  set durationMs(int? durationMs) => _$this._durationMs = durationMs;
 
   String? _previewUrl;
   String? get previewUrl => _$this._previewUrl;
@@ -3087,9 +3011,9 @@ class GPlaylistData_playlist_items_trackBuilder
       _id = $v.id.toBuilder();
       _isrc = $v.isrc;
       _name = $v.name;
-      _discNumber = $v.discNumber.toBuilder();
-      _trackNumber = $v.trackNumber.toBuilder();
-      _durationMs = $v.durationMs.toBuilder();
+      _discNumber = $v.discNumber;
+      _trackNumber = $v.trackNumber;
+      _durationMs = $v.durationMs;
       _previewUrl = $v.previewUrl;
       _popularity = $v.popularity;
       _artworkL = $v.artworkL.toBuilder();
@@ -3119,19 +3043,22 @@ class GPlaylistData_playlist_items_trackBuilder
     try {
       _$result = _$v ??
           new _$GPlaylistData_playlist_items_track._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  'GPlaylistData_playlist_items_track', 'G__typename'),
+              G__typename: BuiltValueNullFieldError.checkNotNull(
+                  G__typename, 'GPlaylistData_playlist_items_track', 'G__typename'),
               id: id.build(),
               isrc: BuiltValueNullFieldError.checkNotNull(
                   isrc, 'GPlaylistData_playlist_items_track', 'isrc'),
               name: BuiltValueNullFieldError.checkNotNull(
                   name, 'GPlaylistData_playlist_items_track', 'name'),
-              discNumber: discNumber.build(),
-              trackNumber: trackNumber.build(),
-              durationMs: durationMs.build(),
+              discNumber: BuiltValueNullFieldError.checkNotNull(
+                  discNumber, 'GPlaylistData_playlist_items_track', 'discNumber'),
+              trackNumber: BuiltValueNullFieldError.checkNotNull(trackNumber,
+                  'GPlaylistData_playlist_items_track', 'trackNumber'),
+              durationMs: BuiltValueNullFieldError.checkNotNull(
+                  durationMs, 'GPlaylistData_playlist_items_track', 'durationMs'),
               previewUrl: previewUrl,
-              popularity: BuiltValueNullFieldError.checkNotNull(popularity,
-                  'GPlaylistData_playlist_items_track', 'popularity'),
+              popularity: BuiltValueNullFieldError.checkNotNull(
+                  popularity, 'GPlaylistData_playlist_items_track', 'popularity'),
               artworkL: artworkL.build(),
               artworkM: artworkM.build(),
               appleMusicTracks: _appleMusicTracks?.build(),
@@ -3141,13 +3068,6 @@ class GPlaylistData_playlist_items_trackBuilder
       try {
         _$failedField = 'id';
         id.build();
-
-        _$failedField = 'discNumber';
-        discNumber.build();
-        _$failedField = 'trackNumber';
-        trackNumber.build();
-        _$failedField = 'durationMs';
-        durationMs.build();
 
         _$failedField = 'artworkL';
         artworkL.build();
@@ -3175,9 +3095,9 @@ class _$GPlaylistData_playlist_items_track_artworkL
   @override
   final String? url;
   @override
-  final _i3.GPositiveNumber? width;
+  final int? width;
   @override
-  final _i3.GPositiveNumber? height;
+  final int? height;
 
   factory _$GPlaylistData_playlist_items_track_artworkL(
           [void Function(GPlaylistData_playlist_items_track_artworkLBuilder)?
@@ -3246,15 +3166,13 @@ class GPlaylistData_playlist_items_track_artworkLBuilder
   String? get url => _$this._url;
   set url(String? url) => _$this._url = url;
 
-  _i3.GPositiveNumberBuilder? _width;
-  _i3.GPositiveNumberBuilder get width =>
-      _$this._width ??= new _i3.GPositiveNumberBuilder();
-  set width(_i3.GPositiveNumberBuilder? width) => _$this._width = width;
+  int? _width;
+  int? get width => _$this._width;
+  set width(int? width) => _$this._width = width;
 
-  _i3.GPositiveNumberBuilder? _height;
-  _i3.GPositiveNumberBuilder get height =>
-      _$this._height ??= new _i3.GPositiveNumberBuilder();
-  set height(_i3.GPositiveNumberBuilder? height) => _$this._height = height;
+  int? _height;
+  int? get height => _$this._height;
+  set height(int? height) => _$this._height = height;
 
   GPlaylistData_playlist_items_track_artworkLBuilder() {
     GPlaylistData_playlist_items_track_artworkL._initializeBuilder(this);
@@ -3265,8 +3183,8 @@ class GPlaylistData_playlist_items_track_artworkLBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _url = $v.url;
-      _width = $v.width?.toBuilder();
-      _height = $v.height?.toBuilder();
+      _width = $v.width;
+      _height = $v.height;
       _$v = null;
     }
     return this;
@@ -3287,30 +3205,13 @@ class GPlaylistData_playlist_items_track_artworkLBuilder
 
   @override
   _$GPlaylistData_playlist_items_track_artworkL build() {
-    _$GPlaylistData_playlist_items_track_artworkL _$result;
-    try {
-      _$result = _$v ??
-          new _$GPlaylistData_playlist_items_track_artworkL._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  'GPlaylistData_playlist_items_track_artworkL', 'G__typename'),
-              url: url,
-              width: _width?.build(),
-              height: _height?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'width';
-        _width?.build();
-        _$failedField = 'height';
-        _height?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GPlaylistData_playlist_items_track_artworkL',
-            _$failedField,
-            e.toString());
-      }
-      rethrow;
-    }
+    final _$result = _$v ??
+        new _$GPlaylistData_playlist_items_track_artworkL._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                'GPlaylistData_playlist_items_track_artworkL', 'G__typename'),
+            url: url,
+            width: width,
+            height: height);
     replace(_$result);
     return _$result;
   }
@@ -3323,9 +3224,9 @@ class _$GPlaylistData_playlist_items_track_artworkM
   @override
   final String? url;
   @override
-  final _i3.GPositiveNumber? width;
+  final int? width;
   @override
-  final _i3.GPositiveNumber? height;
+  final int? height;
 
   factory _$GPlaylistData_playlist_items_track_artworkM(
           [void Function(GPlaylistData_playlist_items_track_artworkMBuilder)?
@@ -3394,15 +3295,13 @@ class GPlaylistData_playlist_items_track_artworkMBuilder
   String? get url => _$this._url;
   set url(String? url) => _$this._url = url;
 
-  _i3.GPositiveNumberBuilder? _width;
-  _i3.GPositiveNumberBuilder get width =>
-      _$this._width ??= new _i3.GPositiveNumberBuilder();
-  set width(_i3.GPositiveNumberBuilder? width) => _$this._width = width;
+  int? _width;
+  int? get width => _$this._width;
+  set width(int? width) => _$this._width = width;
 
-  _i3.GPositiveNumberBuilder? _height;
-  _i3.GPositiveNumberBuilder get height =>
-      _$this._height ??= new _i3.GPositiveNumberBuilder();
-  set height(_i3.GPositiveNumberBuilder? height) => _$this._height = height;
+  int? _height;
+  int? get height => _$this._height;
+  set height(int? height) => _$this._height = height;
 
   GPlaylistData_playlist_items_track_artworkMBuilder() {
     GPlaylistData_playlist_items_track_artworkM._initializeBuilder(this);
@@ -3413,8 +3312,8 @@ class GPlaylistData_playlist_items_track_artworkMBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _url = $v.url;
-      _width = $v.width?.toBuilder();
-      _height = $v.height?.toBuilder();
+      _width = $v.width;
+      _height = $v.height;
       _$v = null;
     }
     return this;
@@ -3435,30 +3334,13 @@ class GPlaylistData_playlist_items_track_artworkMBuilder
 
   @override
   _$GPlaylistData_playlist_items_track_artworkM build() {
-    _$GPlaylistData_playlist_items_track_artworkM _$result;
-    try {
-      _$result = _$v ??
-          new _$GPlaylistData_playlist_items_track_artworkM._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  'GPlaylistData_playlist_items_track_artworkM', 'G__typename'),
-              url: url,
-              width: _width?.build(),
-              height: _height?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'width';
-        _width?.build();
-        _$failedField = 'height';
-        _height?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GPlaylistData_playlist_items_track_artworkM',
-            _$failedField,
-            e.toString());
-      }
-      rethrow;
-    }
+    final _$result = _$v ??
+        new _$GPlaylistData_playlist_items_track_artworkM._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
+                'GPlaylistData_playlist_items_track_artworkM', 'G__typename'),
+            url: url,
+            width: width,
+            height: height);
     replace(_$result);
     return _$result;
   }

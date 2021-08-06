@@ -167,15 +167,13 @@ class _$GArtistData_artist_artworkLSerializer
     if (value != null) {
       result
         ..add('width')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.height;
     if (value != null) {
       result
         ..add('height')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -201,14 +199,12 @@ class _$GArtistData_artist_artworkLSerializer
               specifiedType: const FullType(String)) as String?;
           break;
         case 'width':
-          result.width.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.width = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'height':
-          result.height.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.height = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -488,9 +484,9 @@ class _$GArtistData_artist_artworkL extends GArtistData_artist_artworkL {
   @override
   final String? url;
   @override
-  final _i2.GPositiveNumber? width;
+  final int? width;
   @override
-  final _i2.GPositiveNumber? height;
+  final int? height;
 
   factory _$GArtistData_artist_artworkL(
           [void Function(GArtistData_artist_artworkLBuilder)? updates]) =>
@@ -554,15 +550,13 @@ class GArtistData_artist_artworkLBuilder
   String? get url => _$this._url;
   set url(String? url) => _$this._url = url;
 
-  _i2.GPositiveNumberBuilder? _width;
-  _i2.GPositiveNumberBuilder get width =>
-      _$this._width ??= new _i2.GPositiveNumberBuilder();
-  set width(_i2.GPositiveNumberBuilder? width) => _$this._width = width;
+  int? _width;
+  int? get width => _$this._width;
+  set width(int? width) => _$this._width = width;
 
-  _i2.GPositiveNumberBuilder? _height;
-  _i2.GPositiveNumberBuilder get height =>
-      _$this._height ??= new _i2.GPositiveNumberBuilder();
-  set height(_i2.GPositiveNumberBuilder? height) => _$this._height = height;
+  int? _height;
+  int? get height => _$this._height;
+  set height(int? height) => _$this._height = height;
 
   GArtistData_artist_artworkLBuilder() {
     GArtistData_artist_artworkL._initializeBuilder(this);
@@ -573,8 +567,8 @@ class GArtistData_artist_artworkLBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _url = $v.url;
-      _width = $v.width?.toBuilder();
-      _height = $v.height?.toBuilder();
+      _width = $v.width;
+      _height = $v.height;
       _$v = null;
     }
     return this;
@@ -593,28 +587,13 @@ class GArtistData_artist_artworkLBuilder
 
   @override
   _$GArtistData_artist_artworkL build() {
-    _$GArtistData_artist_artworkL _$result;
-    try {
-      _$result = _$v ??
-          new _$GArtistData_artist_artworkL._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, 'GArtistData_artist_artworkL', 'G__typename'),
-              url: url,
-              width: _width?.build(),
-              height: _height?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'width';
-        _width?.build();
-        _$failedField = 'height';
-        _height?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GArtistData_artist_artworkL', _$failedField, e.toString());
-      }
-      rethrow;
-    }
+    final _$result = _$v ??
+        new _$GArtistData_artist_artworkL._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename, 'GArtistData_artist_artworkL', 'G__typename'),
+            url: url,
+            width: width,
+            height: height);
     replace(_$result);
     return _$result;
   }

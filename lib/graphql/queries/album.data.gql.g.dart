@@ -105,7 +105,7 @@ class _$GAlbumData_albumSerializer
           specifiedType: const FullType(_i2.GTTID)),
       'totalTracks',
       serializers.serialize(object.totalTracks,
-          specifiedType: const FullType(_i2.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'name',
       serializers.serialize(object.name, specifiedType: const FullType(String)),
       'status',
@@ -170,9 +170,8 @@ class _$GAlbumData_albumSerializer
               specifiedType: const FullType(_i2.GTTID))! as _i2.GTTID);
           break;
         case 'totalTracks':
-          result.totalTracks.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.totalTracks = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'name':
           result.name = serializers.deserialize(value,
@@ -261,15 +260,13 @@ class _$GAlbumData_album_artworkLSerializer
     if (value != null) {
       result
         ..add('width')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.height;
     if (value != null) {
       result
         ..add('height')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -295,14 +292,12 @@ class _$GAlbumData_album_artworkLSerializer
               specifiedType: const FullType(String)) as String?;
           break;
         case 'width':
-          result.width.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.width = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'height':
-          result.height.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.height = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -342,15 +337,13 @@ class _$GAlbumData_album_artworkMSerializer
     if (value != null) {
       result
         ..add('width')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.height;
     if (value != null) {
       result
         ..add('height')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -376,14 +369,12 @@ class _$GAlbumData_album_artworkMSerializer
               specifiedType: const FullType(String)) as String?;
           break;
         case 'width':
-          result.width.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.width = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'height':
-          result.height.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.height = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -539,13 +530,13 @@ class _$GAlbumData_album_tracksSerializer
       serializers.serialize(object.name, specifiedType: const FullType(String)),
       'discNumber',
       serializers.serialize(object.discNumber,
-          specifiedType: const FullType(_i2.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'trackNumber',
       serializers.serialize(object.trackNumber,
-          specifiedType: const FullType(_i2.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'durationMs',
       serializers.serialize(object.durationMs,
-          specifiedType: const FullType(_i2.GPositiveNumber)),
+          specifiedType: const FullType(int)),
       'popularity',
       serializers.serialize(object.popularity,
           specifiedType: const FullType(int)),
@@ -613,19 +604,16 @@ class _$GAlbumData_album_tracksSerializer
               specifiedType: const FullType(String)) as String;
           break;
         case 'discNumber':
-          result.discNumber.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.discNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'trackNumber':
-          result.trackNumber.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.trackNumber = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'durationMs':
-          result.durationMs.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.durationMs = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int;
           break;
         case 'previewUrl':
           result.previewUrl = serializers.deserialize(value,
@@ -697,15 +685,13 @@ class _$GAlbumData_album_tracks_artworkLSerializer
     if (value != null) {
       result
         ..add('width')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.height;
     if (value != null) {
       result
         ..add('height')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -731,14 +717,12 @@ class _$GAlbumData_album_tracks_artworkLSerializer
               specifiedType: const FullType(String)) as String?;
           break;
         case 'width':
-          result.width.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.width = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'height':
-          result.height.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.height = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -778,15 +762,13 @@ class _$GAlbumData_album_tracks_artworkMSerializer
     if (value != null) {
       result
         ..add('width')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     value = object.height;
     if (value != null) {
       result
         ..add('height')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(_i2.GPositiveNumber)));
+        ..add(serializers.serialize(value, specifiedType: const FullType(int)));
     }
     return result;
   }
@@ -812,14 +794,12 @@ class _$GAlbumData_album_tracks_artworkMSerializer
               specifiedType: const FullType(String)) as String?;
           break;
         case 'width':
-          result.width.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.width = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
         case 'height':
-          result.height.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPositiveNumber))!
-              as _i2.GPositiveNumber);
+          result.height = serializers.deserialize(value,
+              specifiedType: const FullType(int)) as int?;
           break;
       }
     }
@@ -1071,7 +1051,7 @@ class _$GAlbumData_album extends GAlbumData_album {
   @override
   final _i2.GTTID id;
   @override
-  final _i2.GPositiveNumber totalTracks;
+  final int totalTracks;
   @override
   final String name;
   @override
@@ -1221,11 +1201,9 @@ class GAlbumData_albumBuilder
   _i2.GTTIDBuilder get id => _$this._id ??= new _i2.GTTIDBuilder();
   set id(_i2.GTTIDBuilder? id) => _$this._id = id;
 
-  _i2.GPositiveNumberBuilder? _totalTracks;
-  _i2.GPositiveNumberBuilder get totalTracks =>
-      _$this._totalTracks ??= new _i2.GPositiveNumberBuilder();
-  set totalTracks(_i2.GPositiveNumberBuilder? totalTracks) =>
-      _$this._totalTracks = totalTracks;
+  int? _totalTracks;
+  int? get totalTracks => _$this._totalTracks;
+  set totalTracks(int? totalTracks) => _$this._totalTracks = totalTracks;
 
   String? _name;
   String? get name => _$this._name;
@@ -1289,7 +1267,7 @@ class GAlbumData_albumBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _id = $v.id.toBuilder();
-      _totalTracks = $v.totalTracks.toBuilder();
+      _totalTracks = $v.totalTracks;
       _name = $v.name;
       _status = $v.status;
       _releaseDate = $v.releaseDate.toBuilder();
@@ -1325,7 +1303,8 @@ class GAlbumData_albumBuilder
               G__typename: BuiltValueNullFieldError.checkNotNull(
                   G__typename, 'GAlbumData_album', 'G__typename'),
               id: id.build(),
-              totalTracks: totalTracks.build(),
+              totalTracks: BuiltValueNullFieldError.checkNotNull(
+                  totalTracks, 'GAlbumData_album', 'totalTracks'),
               name: BuiltValueNullFieldError.checkNotNull(
                   name, 'GAlbumData_album', 'name'),
               status: BuiltValueNullFieldError.checkNotNull(
@@ -1345,8 +1324,6 @@ class GAlbumData_albumBuilder
       try {
         _$failedField = 'id';
         id.build();
-        _$failedField = 'totalTracks';
-        totalTracks.build();
 
         _$failedField = 'releaseDate';
         releaseDate.build();
@@ -1378,9 +1355,9 @@ class _$GAlbumData_album_artworkL extends GAlbumData_album_artworkL {
   @override
   final String? url;
   @override
-  final _i2.GPositiveNumber? width;
+  final int? width;
   @override
-  final _i2.GPositiveNumber? height;
+  final int? height;
 
   factory _$GAlbumData_album_artworkL(
           [void Function(GAlbumData_album_artworkLBuilder)? updates]) =>
@@ -1443,15 +1420,13 @@ class GAlbumData_album_artworkLBuilder
   String? get url => _$this._url;
   set url(String? url) => _$this._url = url;
 
-  _i2.GPositiveNumberBuilder? _width;
-  _i2.GPositiveNumberBuilder get width =>
-      _$this._width ??= new _i2.GPositiveNumberBuilder();
-  set width(_i2.GPositiveNumberBuilder? width) => _$this._width = width;
+  int? _width;
+  int? get width => _$this._width;
+  set width(int? width) => _$this._width = width;
 
-  _i2.GPositiveNumberBuilder? _height;
-  _i2.GPositiveNumberBuilder get height =>
-      _$this._height ??= new _i2.GPositiveNumberBuilder();
-  set height(_i2.GPositiveNumberBuilder? height) => _$this._height = height;
+  int? _height;
+  int? get height => _$this._height;
+  set height(int? height) => _$this._height = height;
 
   GAlbumData_album_artworkLBuilder() {
     GAlbumData_album_artworkL._initializeBuilder(this);
@@ -1462,8 +1437,8 @@ class GAlbumData_album_artworkLBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _url = $v.url;
-      _width = $v.width?.toBuilder();
-      _height = $v.height?.toBuilder();
+      _width = $v.width;
+      _height = $v.height;
       _$v = null;
     }
     return this;
@@ -1482,28 +1457,13 @@ class GAlbumData_album_artworkLBuilder
 
   @override
   _$GAlbumData_album_artworkL build() {
-    _$GAlbumData_album_artworkL _$result;
-    try {
-      _$result = _$v ??
-          new _$GAlbumData_album_artworkL._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, 'GAlbumData_album_artworkL', 'G__typename'),
-              url: url,
-              width: _width?.build(),
-              height: _height?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'width';
-        _width?.build();
-        _$failedField = 'height';
-        _height?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GAlbumData_album_artworkL', _$failedField, e.toString());
-      }
-      rethrow;
-    }
+    final _$result = _$v ??
+        new _$GAlbumData_album_artworkL._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename, 'GAlbumData_album_artworkL', 'G__typename'),
+            url: url,
+            width: width,
+            height: height);
     replace(_$result);
     return _$result;
   }
@@ -1515,9 +1475,9 @@ class _$GAlbumData_album_artworkM extends GAlbumData_album_artworkM {
   @override
   final String? url;
   @override
-  final _i2.GPositiveNumber? width;
+  final int? width;
   @override
-  final _i2.GPositiveNumber? height;
+  final int? height;
 
   factory _$GAlbumData_album_artworkM(
           [void Function(GAlbumData_album_artworkMBuilder)? updates]) =>
@@ -1580,15 +1540,13 @@ class GAlbumData_album_artworkMBuilder
   String? get url => _$this._url;
   set url(String? url) => _$this._url = url;
 
-  _i2.GPositiveNumberBuilder? _width;
-  _i2.GPositiveNumberBuilder get width =>
-      _$this._width ??= new _i2.GPositiveNumberBuilder();
-  set width(_i2.GPositiveNumberBuilder? width) => _$this._width = width;
+  int? _width;
+  int? get width => _$this._width;
+  set width(int? width) => _$this._width = width;
 
-  _i2.GPositiveNumberBuilder? _height;
-  _i2.GPositiveNumberBuilder get height =>
-      _$this._height ??= new _i2.GPositiveNumberBuilder();
-  set height(_i2.GPositiveNumberBuilder? height) => _$this._height = height;
+  int? _height;
+  int? get height => _$this._height;
+  set height(int? height) => _$this._height = height;
 
   GAlbumData_album_artworkMBuilder() {
     GAlbumData_album_artworkM._initializeBuilder(this);
@@ -1599,8 +1557,8 @@ class GAlbumData_album_artworkMBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _url = $v.url;
-      _width = $v.width?.toBuilder();
-      _height = $v.height?.toBuilder();
+      _width = $v.width;
+      _height = $v.height;
       _$v = null;
     }
     return this;
@@ -1619,28 +1577,13 @@ class GAlbumData_album_artworkMBuilder
 
   @override
   _$GAlbumData_album_artworkM build() {
-    _$GAlbumData_album_artworkM _$result;
-    try {
-      _$result = _$v ??
-          new _$GAlbumData_album_artworkM._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(
-                  G__typename, 'GAlbumData_album_artworkM', 'G__typename'),
-              url: url,
-              width: _width?.build(),
-              height: _height?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'width';
-        _width?.build();
-        _$failedField = 'height';
-        _height?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GAlbumData_album_artworkM', _$failedField, e.toString());
-      }
-      rethrow;
-    }
+    final _$result = _$v ??
+        new _$GAlbumData_album_artworkM._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename, 'GAlbumData_album_artworkM', 'G__typename'),
+            url: url,
+            width: width,
+            height: height);
     replace(_$result);
     return _$result;
   }
@@ -1913,11 +1856,11 @@ class _$GAlbumData_album_tracks extends GAlbumData_album_tracks {
   @override
   final String name;
   @override
-  final _i2.GPositiveNumber discNumber;
+  final int discNumber;
   @override
-  final _i2.GPositiveNumber trackNumber;
+  final int trackNumber;
   @override
-  final _i2.GPositiveNumber durationMs;
+  final int durationMs;
   @override
   final String? previewUrl;
   @override
@@ -2070,23 +2013,17 @@ class GAlbumData_album_tracksBuilder
   String? get name => _$this._name;
   set name(String? name) => _$this._name = name;
 
-  _i2.GPositiveNumberBuilder? _discNumber;
-  _i2.GPositiveNumberBuilder get discNumber =>
-      _$this._discNumber ??= new _i2.GPositiveNumberBuilder();
-  set discNumber(_i2.GPositiveNumberBuilder? discNumber) =>
-      _$this._discNumber = discNumber;
+  int? _discNumber;
+  int? get discNumber => _$this._discNumber;
+  set discNumber(int? discNumber) => _$this._discNumber = discNumber;
 
-  _i2.GPositiveNumberBuilder? _trackNumber;
-  _i2.GPositiveNumberBuilder get trackNumber =>
-      _$this._trackNumber ??= new _i2.GPositiveNumberBuilder();
-  set trackNumber(_i2.GPositiveNumberBuilder? trackNumber) =>
-      _$this._trackNumber = trackNumber;
+  int? _trackNumber;
+  int? get trackNumber => _$this._trackNumber;
+  set trackNumber(int? trackNumber) => _$this._trackNumber = trackNumber;
 
-  _i2.GPositiveNumberBuilder? _durationMs;
-  _i2.GPositiveNumberBuilder get durationMs =>
-      _$this._durationMs ??= new _i2.GPositiveNumberBuilder();
-  set durationMs(_i2.GPositiveNumberBuilder? durationMs) =>
-      _$this._durationMs = durationMs;
+  int? _durationMs;
+  int? get durationMs => _$this._durationMs;
+  set durationMs(int? durationMs) => _$this._durationMs = durationMs;
 
   String? _previewUrl;
   String? get previewUrl => _$this._previewUrl;
@@ -2136,9 +2073,9 @@ class GAlbumData_album_tracksBuilder
       _id = $v.id.toBuilder();
       _isrc = $v.isrc;
       _name = $v.name;
-      _discNumber = $v.discNumber.toBuilder();
-      _trackNumber = $v.trackNumber.toBuilder();
-      _durationMs = $v.durationMs.toBuilder();
+      _discNumber = $v.discNumber;
+      _trackNumber = $v.trackNumber;
+      _durationMs = $v.durationMs;
       _previewUrl = $v.previewUrl;
       _popularity = $v.popularity;
       _artworkL = $v.artworkL.toBuilder();
@@ -2174,9 +2111,12 @@ class GAlbumData_album_tracksBuilder
                   isrc, 'GAlbumData_album_tracks', 'isrc'),
               name: BuiltValueNullFieldError.checkNotNull(
                   name, 'GAlbumData_album_tracks', 'name'),
-              discNumber: discNumber.build(),
-              trackNumber: trackNumber.build(),
-              durationMs: durationMs.build(),
+              discNumber: BuiltValueNullFieldError.checkNotNull(
+                  discNumber, 'GAlbumData_album_tracks', 'discNumber'),
+              trackNumber: BuiltValueNullFieldError.checkNotNull(
+                  trackNumber, 'GAlbumData_album_tracks', 'trackNumber'),
+              durationMs: BuiltValueNullFieldError.checkNotNull(
+                  durationMs, 'GAlbumData_album_tracks', 'durationMs'),
               previewUrl: previewUrl,
               popularity: BuiltValueNullFieldError.checkNotNull(
                   popularity, 'GAlbumData_album_tracks', 'popularity'),
@@ -2189,13 +2129,6 @@ class GAlbumData_album_tracksBuilder
       try {
         _$failedField = 'id';
         id.build();
-
-        _$failedField = 'discNumber';
-        discNumber.build();
-        _$failedField = 'trackNumber';
-        trackNumber.build();
-        _$failedField = 'durationMs';
-        durationMs.build();
 
         _$failedField = 'artworkL';
         artworkL.build();
@@ -2223,9 +2156,9 @@ class _$GAlbumData_album_tracks_artworkL
   @override
   final String? url;
   @override
-  final _i2.GPositiveNumber? width;
+  final int? width;
   @override
-  final _i2.GPositiveNumber? height;
+  final int? height;
 
   factory _$GAlbumData_album_tracks_artworkL(
           [void Function(GAlbumData_album_tracks_artworkLBuilder)? updates]) =>
@@ -2289,15 +2222,13 @@ class GAlbumData_album_tracks_artworkLBuilder
   String? get url => _$this._url;
   set url(String? url) => _$this._url = url;
 
-  _i2.GPositiveNumberBuilder? _width;
-  _i2.GPositiveNumberBuilder get width =>
-      _$this._width ??= new _i2.GPositiveNumberBuilder();
-  set width(_i2.GPositiveNumberBuilder? width) => _$this._width = width;
+  int? _width;
+  int? get width => _$this._width;
+  set width(int? width) => _$this._width = width;
 
-  _i2.GPositiveNumberBuilder? _height;
-  _i2.GPositiveNumberBuilder get height =>
-      _$this._height ??= new _i2.GPositiveNumberBuilder();
-  set height(_i2.GPositiveNumberBuilder? height) => _$this._height = height;
+  int? _height;
+  int? get height => _$this._height;
+  set height(int? height) => _$this._height = height;
 
   GAlbumData_album_tracks_artworkLBuilder() {
     GAlbumData_album_tracks_artworkL._initializeBuilder(this);
@@ -2308,8 +2239,8 @@ class GAlbumData_album_tracks_artworkLBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _url = $v.url;
-      _width = $v.width?.toBuilder();
-      _height = $v.height?.toBuilder();
+      _width = $v.width;
+      _height = $v.height;
       _$v = null;
     }
     return this;
@@ -2328,28 +2259,13 @@ class GAlbumData_album_tracks_artworkLBuilder
 
   @override
   _$GAlbumData_album_tracks_artworkL build() {
-    _$GAlbumData_album_tracks_artworkL _$result;
-    try {
-      _$result = _$v ??
-          new _$GAlbumData_album_tracks_artworkL._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  'GAlbumData_album_tracks_artworkL', 'G__typename'),
-              url: url,
-              width: _width?.build(),
-              height: _height?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'width';
-        _width?.build();
-        _$failedField = 'height';
-        _height?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GAlbumData_album_tracks_artworkL', _$failedField, e.toString());
-      }
-      rethrow;
-    }
+    final _$result = _$v ??
+        new _$GAlbumData_album_tracks_artworkL._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename, 'GAlbumData_album_tracks_artworkL', 'G__typename'),
+            url: url,
+            width: width,
+            height: height);
     replace(_$result);
     return _$result;
   }
@@ -2362,9 +2278,9 @@ class _$GAlbumData_album_tracks_artworkM
   @override
   final String? url;
   @override
-  final _i2.GPositiveNumber? width;
+  final int? width;
   @override
-  final _i2.GPositiveNumber? height;
+  final int? height;
 
   factory _$GAlbumData_album_tracks_artworkM(
           [void Function(GAlbumData_album_tracks_artworkMBuilder)? updates]) =>
@@ -2428,15 +2344,13 @@ class GAlbumData_album_tracks_artworkMBuilder
   String? get url => _$this._url;
   set url(String? url) => _$this._url = url;
 
-  _i2.GPositiveNumberBuilder? _width;
-  _i2.GPositiveNumberBuilder get width =>
-      _$this._width ??= new _i2.GPositiveNumberBuilder();
-  set width(_i2.GPositiveNumberBuilder? width) => _$this._width = width;
+  int? _width;
+  int? get width => _$this._width;
+  set width(int? width) => _$this._width = width;
 
-  _i2.GPositiveNumberBuilder? _height;
-  _i2.GPositiveNumberBuilder get height =>
-      _$this._height ??= new _i2.GPositiveNumberBuilder();
-  set height(_i2.GPositiveNumberBuilder? height) => _$this._height = height;
+  int? _height;
+  int? get height => _$this._height;
+  set height(int? height) => _$this._height = height;
 
   GAlbumData_album_tracks_artworkMBuilder() {
     GAlbumData_album_tracks_artworkM._initializeBuilder(this);
@@ -2447,8 +2361,8 @@ class GAlbumData_album_tracks_artworkMBuilder
     if ($v != null) {
       _G__typename = $v.G__typename;
       _url = $v.url;
-      _width = $v.width?.toBuilder();
-      _height = $v.height?.toBuilder();
+      _width = $v.width;
+      _height = $v.height;
       _$v = null;
     }
     return this;
@@ -2467,28 +2381,13 @@ class GAlbumData_album_tracks_artworkMBuilder
 
   @override
   _$GAlbumData_album_tracks_artworkM build() {
-    _$GAlbumData_album_tracks_artworkM _$result;
-    try {
-      _$result = _$v ??
-          new _$GAlbumData_album_tracks_artworkM._(
-              G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                  'GAlbumData_album_tracks_artworkM', 'G__typename'),
-              url: url,
-              width: _width?.build(),
-              height: _height?.build());
-    } catch (_) {
-      late String _$failedField;
-      try {
-        _$failedField = 'width';
-        _width?.build();
-        _$failedField = 'height';
-        _height?.build();
-      } catch (e) {
-        throw new BuiltValueNestedFieldError(
-            'GAlbumData_album_tracks_artworkM', _$failedField, e.toString());
-      }
-      rethrow;
-    }
+    final _$result = _$v ??
+        new _$GAlbumData_album_tracks_artworkM._(
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+                G__typename, 'GAlbumData_album_tracks_artworkM', 'G__typename'),
+            url: url,
+            width: width,
+            height: height);
     replace(_$result);
     return _$result;
   }

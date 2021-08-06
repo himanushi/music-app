@@ -83,9 +83,9 @@ abstract class GPlaylistData_playlist_track
   _i3.GTTID get id;
   String get isrc;
   String get name;
-  _i3.GPositiveNumber get discNumber;
-  _i3.GPositiveNumber get trackNumber;
-  _i3.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GPlaylistData_playlist_track_artworkL get artworkL;
@@ -120,8 +120,8 @@ abstract class GPlaylistData_playlist_track_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i3.GPositiveNumber? get width;
-  _i3.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GPlaylistData_playlist_track_artworkL> get serializer =>
       _$gPlaylistDataPlaylistTrackArtworkLSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers
@@ -151,8 +151,8 @@ abstract class GPlaylistData_playlist_track_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i3.GPositiveNumber? get width;
-  _i3.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GPlaylistData_playlist_track_artworkM> get serializer =>
       _$gPlaylistDataPlaylistTrackArtworkMSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers
@@ -298,9 +298,9 @@ abstract class GPlaylistData_playlist_items_track
   _i3.GTTID get id;
   String get isrc;
   String get name;
-  _i3.GPositiveNumber get discNumber;
-  _i3.GPositiveNumber get trackNumber;
-  _i3.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GPlaylistData_playlist_items_track_artworkL get artworkL;
@@ -337,8 +337,8 @@ abstract class GPlaylistData_playlist_items_track_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i3.GPositiveNumber? get width;
-  _i3.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GPlaylistData_playlist_items_track_artworkL>
       get serializer => _$gPlaylistDataPlaylistItemsTrackArtworkLSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
@@ -368,8 +368,8 @@ abstract class GPlaylistData_playlist_items_track_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i3.GPositiveNumber? get width;
-  _i3.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GPlaylistData_playlist_items_track_artworkM>
       get serializer => _$gPlaylistDataPlaylistItemsTrackArtworkMSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(

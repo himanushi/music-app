@@ -63,8 +63,8 @@ abstract class GArtistData_artist_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i2.GPositiveNumber? get width;
-  _i2.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GArtistData_artist_artworkL> get serializer =>
       _$gArtistDataArtistArtworkLSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(

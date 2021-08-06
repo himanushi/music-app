@@ -99,9 +99,9 @@ abstract class GPlaylistsData_items_track
   _i2.GTTID get id;
   String get isrc;
   String get name;
-  _i2.GPositiveNumber get discNumber;
-  _i2.GPositiveNumber get trackNumber;
-  _i2.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GPlaylistsData_items_track_artworkL get artworkL;
@@ -134,8 +134,8 @@ abstract class GPlaylistsData_items_track_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i2.GPositiveNumber? get width;
-  _i2.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GPlaylistsData_items_track_artworkL> get serializer =>
       _$gPlaylistsDataItemsTrackArtworkLSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers
@@ -164,8 +164,8 @@ abstract class GPlaylistsData_items_track_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i2.GPositiveNumber? get width;
-  _i2.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GPlaylistsData_items_track_artworkM> get serializer =>
       _$gPlaylistsDataItemsTrackArtworkMSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers

@@ -263,7 +263,7 @@ abstract class GCursorInputObject
       _$GCursorInputObject;
 
   int? get offset;
-  GPositiveNumber? get limit;
+  int? get limit;
   static Serializer<GCursorInputObject> get serializer =>
       _$gCursorInputObjectSerializer;
   Map<String, dynamic> toJson() =>
@@ -562,20 +562,6 @@ abstract class GPlaylistsSortInputObject
   static GPlaylistsSortInputObject? fromJson(Map<String, dynamic> json) =>
       _i1.serializers
           .deserializeWith(GPlaylistsSortInputObject.serializer, json);
-}
-
-abstract class GPositiveNumber
-    implements Built<GPositiveNumber, GPositiveNumberBuilder> {
-  GPositiveNumber._();
-
-  factory GPositiveNumber([String? value]) =>
-      _$GPositiveNumber((b) => value != null ? (b..value = value) : b);
-
-  String get value;
-  @BuiltValueSerializer(custom: true)
-  static Serializer<GPositiveNumber> get serializer =>
-      _i2.DefaultScalarSerializer<GPositiveNumber>(
-          (Object serialized) => GPositiveNumber((serialized as String?)));
 }
 
 abstract class GRadiosConditionsInputObject

@@ -121,7 +121,7 @@ const Album = _i1.ObjectTypeDefinitionNode(
           directives: [],
           args: [],
           type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'PositiveNumber'), isNonNull: true)),
+              name: _i1.NameNode(value: 'Int'), isNonNull: true)),
       _i1.FieldDefinitionNode(
           name: _i1.NameNode(value: 'tracks'),
           directives: [],
@@ -392,7 +392,7 @@ const Artwork = _i1.ObjectTypeDefinitionNode(
           directives: [],
           args: [],
           type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'PositiveNumber'), isNonNull: false)),
+              name: _i1.NameNode(value: 'Int'), isNonNull: false)),
       _i1.FieldDefinitionNode(
           name: _i1.NameNode(value: 'url'),
           directives: [],
@@ -404,7 +404,7 @@ const Artwork = _i1.ObjectTypeDefinitionNode(
           directives: [],
           args: [],
           type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'PositiveNumber'), isNonNull: false))
+              name: _i1.NameNode(value: 'Int'), isNonNull: false))
     ]);
 const ChangeFavoritesInput = _i1.InputObjectTypeDefinitionNode(
     name: _i1.NameNode(value: 'ChangeFavoritesInput'),
@@ -743,7 +743,7 @@ const CursorInputObject = _i1.InputObjectTypeDefinitionNode(
           name: _i1.NameNode(value: 'limit'),
           directives: [],
           type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'PositiveNumber'), isNonNull: false),
+              name: _i1.NameNode(value: 'Int'), isNonNull: false),
           defaultValue: _i1.IntValueNode(value: '30'))
     ]);
 const DeletePlaylistInput = _i1.InputObjectTypeDefinitionNode(
@@ -1749,8 +1749,6 @@ const PlaylistsSortInputObject = _i1.InputObjectTypeDefinitionNode(
               name: _i1.NameNode(value: 'SortEnum'), isNonNull: false),
           defaultValue: _i1.EnumValueNode(name: _i1.NameNode(value: 'DESC')))
     ]);
-const PositiveNumber = _i1.ScalarTypeDefinitionNode(
-    name: _i1.NameNode(value: 'PositiveNumber'), directives: []);
 const PublicInformation = _i1.ObjectTypeDefinitionNode(
     name: _i1.NameNode(value: 'PublicInformation'),
     directives: [],
@@ -2368,13 +2366,13 @@ const Track = _i1.ObjectTypeDefinitionNode(
           directives: [],
           args: [],
           type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'PositiveNumber'), isNonNull: true)),
+              name: _i1.NameNode(value: 'Int'), isNonNull: true)),
       _i1.FieldDefinitionNode(
           name: _i1.NameNode(value: 'durationMs'),
           directives: [],
           args: [],
           type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'PositiveNumber'), isNonNull: true)),
+              name: _i1.NameNode(value: 'Int'), isNonNull: true)),
       _i1.FieldDefinitionNode(
           name: _i1.NameNode(value: 'id'),
           directives: [],
@@ -2425,7 +2423,7 @@ const Track = _i1.ObjectTypeDefinitionNode(
           directives: [],
           args: [],
           type: _i1.NamedTypeNode(
-              name: _i1.NameNode(value: 'PositiveNumber'), isNonNull: true))
+              name: _i1.NameNode(value: 'Int'), isNonNull: true))
     ]);
 const TracksConditionsInputObject = _i1.InputObjectTypeDefinitionNode(
     name: _i1.NameNode(value: 'TracksConditionsInputObject'),
@@ -2987,7 +2985,6 @@ const document = _i1.DocumentNode(definitions: [
   PlaylistsConditionsInputObject,
   PlaylistsQueryOrderEnum,
   PlaylistsSortInputObject,
-  PositiveNumber,
   PublicInformation,
   Query,
   Radio,

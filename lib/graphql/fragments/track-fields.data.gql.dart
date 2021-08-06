@@ -13,9 +13,9 @@ abstract class GTrackFields {
   _i1.GTTID get id;
   String get isrc;
   String get name;
-  _i1.GPositiveNumber get discNumber;
-  _i1.GPositiveNumber get trackNumber;
-  _i1.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GTrackFields_artworkL get artworkL;
@@ -28,16 +28,16 @@ abstract class GTrackFields {
 abstract class GTrackFields_artworkL {
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   Map<String, dynamic> toJson();
 }
 
 abstract class GTrackFields_artworkM {
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   Map<String, dynamic> toJson();
 }
 
@@ -71,9 +71,9 @@ abstract class GTrackFieldsData
   _i1.GTTID get id;
   String get isrc;
   String get name;
-  _i1.GPositiveNumber get discNumber;
-  _i1.GPositiveNumber get trackNumber;
-  _i1.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GTrackFieldsData_artworkL get artworkL;
@@ -104,8 +104,8 @@ abstract class GTrackFieldsData_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GTrackFieldsData_artworkL> get serializer =>
       _$gTrackFieldsDataArtworkLSerializer;
   Map<String, dynamic> toJson() =>
@@ -131,8 +131,8 @@ abstract class GTrackFieldsData_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GTrackFieldsData_artworkM> get serializer =>
       _$gTrackFieldsDataArtworkMSerializer;
   Map<String, dynamic> toJson() =>

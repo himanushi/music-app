@@ -28,9 +28,9 @@ abstract class GRadioFields_tracks implements _i2.GTrackFields {
   _i1.GTTID get id;
   String get isrc;
   String get name;
-  _i1.GPositiveNumber get discNumber;
-  _i1.GPositiveNumber get trackNumber;
-  _i1.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GRadioFields_tracks_artworkL get artworkL;
@@ -44,8 +44,8 @@ abstract class GRadioFields_tracks_artworkL
     implements _i2.GTrackFields_artworkL {
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   Map<String, dynamic> toJson();
 }
 
@@ -53,8 +53,8 @@ abstract class GRadioFields_tracks_artworkM
     implements _i2.GTrackFields_artworkM {
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   Map<String, dynamic> toJson();
 }
 
@@ -81,9 +81,9 @@ abstract class GRadioFields_track implements _i2.GTrackFields {
   _i1.GTTID get id;
   String get isrc;
   String get name;
-  _i1.GPositiveNumber get discNumber;
-  _i1.GPositiveNumber get trackNumber;
-  _i1.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GRadioFields_track_artworkL get artworkL;
@@ -97,8 +97,8 @@ abstract class GRadioFields_track_artworkL
     implements _i2.GTrackFields_artworkL {
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   Map<String, dynamic> toJson();
 }
 
@@ -106,8 +106,8 @@ abstract class GRadioFields_track_artworkM
     implements _i2.GTrackFields_artworkM {
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   Map<String, dynamic> toJson();
 }
 
@@ -176,9 +176,9 @@ abstract class GRadioFieldsData_tracks
   _i1.GTTID get id;
   String get isrc;
   String get name;
-  _i1.GPositiveNumber get discNumber;
-  _i1.GPositiveNumber get trackNumber;
-  _i1.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GRadioFieldsData_tracks_artworkL get artworkL;
@@ -211,8 +211,8 @@ abstract class GRadioFieldsData_tracks_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GRadioFieldsData_tracks_artworkL> get serializer =>
       _$gRadioFieldsDataTracksArtworkLSerializer;
   Map<String, dynamic> toJson() => (_i3.serializers
@@ -241,8 +241,8 @@ abstract class GRadioFieldsData_tracks_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GRadioFieldsData_tracks_artworkM> get serializer =>
       _$gRadioFieldsDataTracksArtworkMSerializer;
   Map<String, dynamic> toJson() => (_i3.serializers
@@ -334,9 +334,9 @@ abstract class GRadioFieldsData_track
   _i1.GTTID get id;
   String get isrc;
   String get name;
-  _i1.GPositiveNumber get discNumber;
-  _i1.GPositiveNumber get trackNumber;
-  _i1.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GRadioFieldsData_track_artworkL get artworkL;
@@ -369,8 +369,8 @@ abstract class GRadioFieldsData_track_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GRadioFieldsData_track_artworkL> get serializer =>
       _$gRadioFieldsDataTrackArtworkLSerializer;
   Map<String, dynamic> toJson() => (_i3.serializers
@@ -398,8 +398,8 @@ abstract class GRadioFieldsData_track_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i1.GPositiveNumber? get width;
-  _i1.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<GRadioFieldsData_track_artworkM> get serializer =>
       _$gRadioFieldsDataTrackArtworkMSerializer;
   Map<String, dynamic> toJson() => (_i3.serializers

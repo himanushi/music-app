@@ -118,9 +118,9 @@ abstract class GAddPlaylistItemsData_addPlaylistItems_playlist_track
   _i3.GTTID get id;
   String get isrc;
   String get name;
-  _i3.GPositiveNumber get discNumber;
-  _i3.GPositiveNumber get trackNumber;
-  _i3.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GAddPlaylistItemsData_addPlaylistItems_playlist_track_artworkL get artworkL;
@@ -165,8 +165,8 @@ abstract class GAddPlaylistItemsData_addPlaylistItems_playlist_track_artworkL
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i3.GPositiveNumber? get width;
-  _i3.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<
           GAddPlaylistItemsData_addPlaylistItems_playlist_track_artworkL>
       get serializer =>
@@ -203,8 +203,8 @@ abstract class GAddPlaylistItemsData_addPlaylistItems_playlist_track_artworkM
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i3.GPositiveNumber? get width;
-  _i3.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<
           GAddPlaylistItemsData_addPlaylistItems_playlist_track_artworkM>
       get serializer =>
@@ -385,9 +385,9 @@ abstract class GAddPlaylistItemsData_addPlaylistItems_playlist_items_track
   _i3.GTTID get id;
   String get isrc;
   String get name;
-  _i3.GPositiveNumber get discNumber;
-  _i3.GPositiveNumber get trackNumber;
-  _i3.GPositiveNumber get durationMs;
+  int get discNumber;
+  int get trackNumber;
+  int get durationMs;
   String? get previewUrl;
   int get popularity;
   GAddPlaylistItemsData_addPlaylistItems_playlist_items_track_artworkL
@@ -437,8 +437,8 @@ abstract class GAddPlaylistItemsData_addPlaylistItems_playlist_items_track_artwo
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i3.GPositiveNumber? get width;
-  _i3.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<
           GAddPlaylistItemsData_addPlaylistItems_playlist_items_track_artworkL>
       get serializer =>
@@ -477,8 +477,8 @@ abstract class GAddPlaylistItemsData_addPlaylistItems_playlist_items_track_artwo
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
   String? get url;
-  _i3.GPositiveNumber? get width;
-  _i3.GPositiveNumber? get height;
+  int? get width;
+  int? get height;
   static Serializer<
           GAddPlaylistItemsData_addPlaylistItems_playlist_items_track_artworkM>
       get serializer =>
