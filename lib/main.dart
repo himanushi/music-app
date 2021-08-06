@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:music_app/graphql/queries/album.req.gql.dart';
@@ -41,7 +42,12 @@ class _HomeState extends State<Home> {
         title: Text(AppLocalizations.of(context)!.title),
       ),
       body: Center(
-        child: AlbumName(),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Buttary(),
+          ],
+        ),
       ),
     );
   }
@@ -70,5 +76,46 @@ class _AlbumNameState extends State<AlbumName> {
         });
 
     return Text(albumName);
+  }
+}
+
+class Buttary extends StatefulWidget {
+  const Buttary({Key? key}) : super(key: key);
+
+  @override
+  _ButtaryState createState() => _ButtaryState();
+}
+
+class _ButtaryState extends State<Buttary> {
+  static const platform = MethodChannel('samples.flutter.dev/battery');
+
+  String _batteryLevel = 'Unknown battery level.';
+
+  Future<void> _getBatteryLevel() async {
+    String batteryLevel;
+    try {
+      final int result = await platform.invokeMethod('getBatteryLevel');
+      batteryLevel = 'Battery level at $result % .';
+    } on PlatformException catch (e) {
+      batteryLevel = "Failed to get battery level: '${e.message}'.";
+    }
+
+    setState(() {
+      _batteryLevel = batteryLevel;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        ElevatedButton(
+          child: Text('Get Battery Level'),
+          onPressed: _getBatteryLevel,
+        ),
+        Text(_batteryLevel),
+      ],
+    );
   }
 }
