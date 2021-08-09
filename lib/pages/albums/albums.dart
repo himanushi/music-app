@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../widgets/app/footer.dart';
+import 'package:music_app/widgets/app/footer.dart';
 
 class AlbumsPage extends StatefulWidget {
   const AlbumsPage({Key? key}) : super(key: key);
